@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, 
+body, 
+div, 
+span, 
+applet, 
+object, 
+iframe,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+blockquote, 
+pre,
+a, 
+abbr, 
+acronym, 
+address, 
+big, 
+cite, 
+code,
+del, 
+dfn, 
+em, 
+img, 
+ins, 
+kbd, 
+q, 
+s, 
+samp,
+small, 
+strike, 
+strong, 
+sub, 
+sup, 
+tt, 
+var,
+b, 
+u, 
+i, 
+center,
+dl, 
+dt, 
+dd, 
+ol, 
+ul, 
+li,
+fieldset, 
+form, 
+label, 
+legend,
+table, 
+caption, 
+tbody, 
+tfoot, 
+thead, 
+tr, 
+th, 
+td,
+article, 
+aside, 
+canvas, 
+details, 
+embed, 
+figure, 
+figcaption, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+output, 
+ruby, 
+section, 
+summary,
+time, 
+mark, 
+audio, 
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, 
+ul {
+	list-style: none;
+}
+blockquote, 
+q {
+	quotes: none;
+}
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, img, button, input, label, textarea, select {
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+}
+    /* Reset CSS (End) */
+
+/* Variable (Start) */
+:root {
+    --width-logo: 95.11745px;
+    --height-logo: 18px;
+}
+
+    /* Variable (End) */
+
+/* Dàn trang (Start) */
+.grid {
+    /* width: 1790px; */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-full_width {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /* Dàn trang (END) */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Drop down (Start) */
+
+/* Drop dowm (End) */
+
+.notice-sale {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.notice-sale_box {
+    /* padding: 0 7rem;     */
+    width: 22%;
+    text-align: center;
+}
+
+.notice-sale_box:nth-child(2) {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.notice-sale_item {
+    font-family: "Roboto Mono", monospace;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.notice-sale:hover .notice-sale_box {
+    cursor: pointer;
+}
+
+.notice-sale_box:hover a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 56px;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-logo {
+    height: 18px;
+}
+
+.nav-item .logo {
+    width: var(--width-logo);
+    height: var(--height-logo);
+}
+
+.nav-direction {
+    font-family: "Roboto Mono", monospace;
+    margin-left: 50px;
+    font-size: 1.4rem;
+}
+
+.nav-direction ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-direction ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav-direction ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.nav_arrow {
+    width: 12px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 6px;
+    gap: 6px;
+}
+
+.nav-item:last-child {
+    font-family: "Lato", sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 30px;
+    padding: 0 20px;
+    background-color: #f94545;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.btn-buy {
+    cursor: pointer;
+    padding: 13px 20px;
+    background-color: #fff;
+}
+
+.user-box {
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+}
+
+.user-box {
+    position: relative;
+}
+
+.sign-up {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.sign-up:hover {
+    opacity: 0.7;
+}
+
+.sign-in {
+    color: #171c28;
+    background-color: transparent;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    margin-left: 10px;
+}
+
+.sign-in:hover {
+    border: 1px solid #000;
+    opacity: 0.7;
+}
+
+.form-input_box {
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.form-input {
+    width: 150px;
+    /* padding-left: 20px; */
+    padding: 4px 26px 5px 7px;
+}
+
+/* .form-input:hover {
+    animation: form-input-with ease-in 1s ;
+
+}
+
+@keyframes form-input-with {
+    from {
+        width: 120px;
+    } to {
+        width: 180px;
+    }
+} */
+
+.nav-item .icon-search {
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+ /* Header (End) */
+
+
+/* ====================================  Code trên chỉ được xem không được đụng. Đụng tôi đấm chết ==================================== */
+
+
+
+ /* Main (Start) */
+ .container {
+    height: 1000px;
+}
+
+.container img {
+    width: 100%;
+}
+
+
+                /* CSS Main viet o day nhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀   ⢀⠤⠒⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀  ⢀⡯⠴⠶⠶⠒⠢⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀  ⡎⡤⠖⠂⡀⠒⡢⡌⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠯⢭⣵⠑⣯⡭⢹⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡆⠀⢠⣤⠄⠀⣸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣷⢄⣈⣟⢁⢴⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⠀⠀⣀⢴⠒⡝⠁⠬⠛⣚⡩⠔⠉⢻⠒⣦⢄⠀⠀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⠀⢀⢎⠁⡌⢰⠁⠀⠀⠀⠀⠀⠀⠀⢸⠀⡛⠀⡷⡀⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⣀⣾⣷⣠⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⢹⢰⠁⢳⠀⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⢸⡿⠟⢿⢳⡏⠀⠀⠀⠀⠀⠀⠀⢠⡟⣶⣘⢞⡀⠘⡆⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⡼⢺⣯⢹⢰⡏⠒⠒⠒⠊⠀⠐⢒⣾⣹⣸⢹⣾⡇⠀⢣⠀⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⣏⣾⠃⠀⣼⡟⣢⣀⡠⠤⣀⡰⢋⡝⣱⣹⠇⣿⣧⣴⠸⡄⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⡏⡞⡆⢠⡇⣟⠭⡒⠭⠭⠤⠒⣡⠔⣽⡇⣂⣿⠟⠃⢀⡇⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⢧⡇⡧⢫⠃⣷⣽⣒⣍⣉⣈⡩⢴⠾⡳⢡⢸⣛⣪⡗⢴⠁⠀⠀⠀⠀
+                                            ⠀⠀⠀⠀⣼⢃⠷⣸⣤⣯⢞⡥⢍⣐⣂⠨⠅⠊⡠⢃⣟⢏⠹⣎⣆⡀⠀⠀⠀⠀
+                                            ⠀⡠⠶⠚⠛⠛⠽⢹⡟⡖⢓⠿⣝⠓⠒⠒⠒⠭⢤⠗⣯⣩⣽⣿⠷⣾⣿⢷⣆⠀
+                                            ⠜⣌⠢⢄⣀⡀⠀⡞⢡⠘⢄⠑⠨⢉⣀⠉⣀⠄⢊⠜⡸⠛⣿⡍⠉⠉⠈⢁⠁⠇
+                                            ⠈⢯⡓⠦⠤⠬⠭⣵⠀⠱⢄⠑⠲⠤⠤⠤⠤⠒⢁⡔⠁⢠⣏⣡⣤⣤⡶⠜⣻⠃
+                                            ⠀⠈⠙⠛⠒⠛⠻⠯⠕⠤⣀⣉⣓⣒⣂⣒⣒⣊⣁⣠⠔⠛⠂⠒⠛⠓⠛⠚⠉⠀ 
+                  CSS Main viet o day nhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+
+/* Main (End) */
+
+
+
+
+
+/* ====================================  Code dưới chỉ được xem không được đụng. Đụng tôi đấm chết ==================================== */
+
+
+/* Footer (Start) */
+.footer {
+    background-color: #eeeeee;
+    padding: 50px 56px;
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1fr 1fr 1.5fr;
+    gap: 60px;
+}
+
+.footer-title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.footer-list {
+    margin-top: 18px;
+}
+
+.footer-link {
+    display: inline-block;
+    padding: 8px 0;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.footer-text {
+    padding: 8px 0;
+    line-height: 1.4rem;
+}
+
+.footer-link:hover {
+    color: #0071dc;
+}
+
+.footer-label {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.footer-logo_img {
+    width: calc(var(--width-logo) * 1.7);
+    height: calc(var(--height-logo) * 1.7);
+}
+
+.footer-desc {
+    line-height: 1.5rem;
+    margin-top: 30px;
+}
+
+.footer-help_text {
+    line-height: 1.4rem;
+    margin-top: 40px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 10px;
+    padding: 16px 0;
+}
+
+.footer-input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #d2d1d6;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: transparent;
+}
+
+.btn-send {
+    color: #171c28;
+    background-color: #ccc;
+    height: 43px;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+.btn-send:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+    color: #9e9da6;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding-right: 20px; */
+}
+
+.footer-social_icon {
+    width: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
+}
+
+.footer-social_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    filter: grayscale(50%);
+    transition: translate, filter;
+    transition-duration: 0.3s;
+}
+
+.footer-social_link:hover {
+    filter: grayscale(0);
+    translate: 0 -3px;
+}
+
+.footer-social_facebook {
+    background: #4863a9;
+}
+
+.footer-social_youtube {
+    background: #f00;
+}
+
+.footer-social_tiktok {
+    background: #000;
+}
+
+.footer-social_instagram {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);;
+}
+
+/* Footer (End) */
