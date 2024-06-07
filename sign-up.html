@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Đăng Ký</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon/icon-120x120.png" type="image/x-icon">
@@ -28,48 +28,95 @@
     <!-- Script -->
     <script src="./assets/js/app.js"></script>
 </head>
-<body>
+<body class="container">
     <!-- Header -->
-    <header id="header" class="header">
-    </header>
+    <!-- <header id="header" class="header">
+    </header> -->
 
     <!-- Main -->
-    <main class="container">
+    <main class="auth">
+        <div class="auth__intro d-md-none">
+            <img src="./assets/img/logo.svg" alt="" class="auth__intro-img" />
+            <p class="auth__intro-text">
+                Những giá trị thương hiệu xa xỉ tốt nhất, sản phẩm chất lượng cao và dịch vụ sáng tạo
+            </p>
+        </div>
 
+        <!-- Auth content -->
+        <div class="auth__content">
+            <div class="auth__content-inner">
+                <a href="./" class="logo">
+                    <center><img src="./assets/img/log(Trang)/clock.png" alt="CASIO" class="logo__img" />
+                    <h2 class="logo__title">CASIO</h2></center>    
+                </a>
+                <h1 class="auth__heading">Đăng ký</h1>
+                <p class="auth__desc">
+                    Hãy tạo tài khoản và mua sắm như một người chuyên nghiệp và tiết kiệm tiền.
+                </p>
+                <form action="./sign-in.html" class="form auth__form">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="Email"
+                                class="form__input"
+                                autofocus
+                                required
+                            />
+                            <img src="./assets/img/log(Trang)/email.png" alt="" class="form__input-icon" />
+                            <img src="./assets/img/log(Trang)/padlock.png" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Email không đúng định dạng</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input
+                                type="password"
+                                name=""
+                                id=""
+                                placeholder="Mật khẩu"
+                                class="form__input"
+                                required
+                                minlength="6"
+                            />
+                            <img src="./assets/img/log(Trang)/padlock.png" alt="" class="form__input-icon" />
+                            <img src="./assets/img/log(Trang)/warning.png" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input
+                                type="password"
+                                name=""
+                                id=""
+                                placeholder="Xác nhận mật khẩu"
+                                class="form__input"
+                                required
+                                minlength="6"
+                            />
+                            <img src="./assets/img/log(Trang)/padlock.png" alt="" class="form__input-icon" />
+                            <img src="./assets/img/log(Trang)/warning.png" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                    </div>
+                    <div class="form__group auth__btn-group">
+                        <button class="btn-auth btn--primary auth__btn form__submit-btn">Đăng ký</button>
+                    </div>
+                    
+                </form>
 
-                                        <!-- Viết code ở đây ae ưi 
-
-
-
-                                                 _oo0oo_
-                                                o8888888o
-                                                88" . "88
-                                                (| -_- |)
-                                                0\  =  /0
-                                                ___/`---'\___
-                                            .' \\|     |// '.
-                                            / \\|||  :  |||// \
-                                            / _||||| -:- |||||- \
-                                        |   | \\\  -  /// |   |
-                                        | \_|  ''\---/''  |_/ |
-                                        \  .-\__  '-'  ___/-. /
-                                        ___'. .'  /--.--\  `. .'___
-                                    ."" '<  `.___\_<|>_/___.' >' "".
-                                    | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-                                    \  \ `_.   \_ __\ /__ _/   .-` /  /
-                                =====`-.____`.___ \_____/___.-`___.-'=====
-                                                `=---='
-
-                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                        Phật phù hộ, không bao giờ BUG
-                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-
-
-                                
-                                         Viết code ở đây ae ưi -->
-    </main>
+                <p class="auth__text">
+                    Bạn đã có tài khoản???
+                    <a href="./sign-in.html" class="auth__link auth__text-link">Đăng nhập</a>
+                </p>
+            </div>
+        </div>
+    </main> 
 
     <!-- Footer -->
-    <footer id="footer" class="footer"></footer>
+    <!-- <footer id="footer" class="footer"></footer> -->
 </body>
 </html>
