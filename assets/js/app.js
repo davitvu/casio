@@ -32,8 +32,11 @@ function load(selector, path) {
 
 
 
-window.addEventListener("template-loaded", AddRemoveClass)
+/* 
+    Hàm này dùng để show tab trên hover navbar
+*/
 
+window.addEventListener("template-loaded", AddRemoveClass)
 
 function AddRemoveClass() {
     let listLi = document.querySelectorAll(".nav-direction_box li");
