@@ -142,6 +142,10 @@ a, img, button, input, label, textarea, select {
     --height-logo: 18px;
 }
 
+.dp-block {
+    display: block !important;
+}
+
     /* Variable (End) */
 
 /* Dàn trang (Start) */
@@ -215,10 +219,11 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
+    position: relative;
     background-color: #fff;
     padding: 0 56px;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 0 0 0 2px 0 rgba(0, 0, 0, 0.7);
+    /* border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .nav-box {
@@ -264,6 +269,14 @@ body {
     position: relative;
 }
 
+.nav-direction_box > li:hover > a {
+    opacity: 0.7;
+}
+
+.nav-direction_box li:hover .nav-dropdown {
+    display: block;
+}
+
 .nav_arrow {
     width: 12px;
     position: absolute;
@@ -306,8 +319,79 @@ body {
     display: block;
 }
 
+.user-box:hover .user-box_dropdown {
+    display: block;
+}
+
 .user-box {
     position: relative;
+}
+
+.user-box_dropdown {
+    position: absolute;
+    top: 35px;
+    right: -15px;
+    padding-top: 30px;
+    display: none;
+}
+
+.user-dropdown {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0px 4px 4px rgba(200, 200, 200, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.user-dropdown > img {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 20px;
+}
+
+.user-menu_top {
+    display: grid;
+    justify-content: center;
+}
+
+.user-menu_name {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.user-menu_list {
+    padding-top: 10px;
+}
+
+.user-menu_list li {
+    margin: 20px 0;
+}
+
+.user-menu_list li:hover {
+    color: #f83b54;
+    cursor: pointer;
+}
+
+.user-menu_list li:nth-child(3) {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.user-menu_list li:last-child {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.user-menu_list li a img {
+    width: 15px;
+    padding-right: 10px;
+}
+
+.user-menu_list li a {
+    text-decoration: none;
 }
 
 .sign-up {
@@ -362,12 +446,125 @@ body {
     top: 5px;
     right: 5px;
 }
+
+    /* Subnav (Start) */
+
+
+.nav-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}    
+
+.nav-dropdown_box {
+    position: relative;
+    padding: 30px 170px;
+    box-shadow: 0 4px 4px rgba(200, 200, 200, 0.4);
+    border-bottom: 1px solid #ccc;
+}   
+
+.nav-top_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subnav-direction_active {
+    border-bottom: 2px solid #333;
+}
+
+.nav-subnav_fullproduct-btn {
+    border-bottom: 1px solid #333;
+    margin-right: 30px;
+}
+
+.nav-subnav_fullproduct-btn:hover { 
+    border-bottom: 2px solid #333;
+}
+
+.nav-subnav_center {
+    display: none;
+    padding: 20px 0 30px 0px;
+    overflow-x: auto;
+    /* animation: slide 1s ease-in-out 0s 1 normal forwards; */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nav-subnav_center::-webkit-scrollbar {
+    height: 5px;
+    }
+    
+.nav-subnav_center::-webkit-scrollbar-track {
+    margin-left: 15px;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+    
+.nav-subnav_center::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+    height: 10px; /* Độ cao của thumb */
+    margin-bottom: -5px; /* Dịch chuyển thumb xuống dưới */
+}
+
+.nav-subnav_center::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
+}
+
+.nav-subnav_center-list {
+    width: 214px;    
+    display: flex;
+}
+
+.nav-subnav_center-item {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.nav-subnav_center-item a:first-child {
+    padding-bottom: 20px;
+}
+    
+.nav-subnav_center-item img{
+    border: 1px solid transparent;
+    background-color: #f4f5f8;
+    width: 212px;
+    height: 212px;
+}
+
+.nav-subnav_center-item img:hover {
+    border: 1px solid #333;
+}
+    
+.nav-subnav_center-title {
+    top: 10px;
+}
+
+.nav-bottom_menu {
+    margin: 50px 0 10px;
+    font-weight: normal;
+}
+
+.nav-bottom_menu ul li:hover a {
+    border-bottom: 2px solid #333;
+}
+
+    /* Subnav (End) */
+
  /* Header (End) */
-
-
-/* ====================================  Code trên chỉ được xem không được đụng. Đụng tôi đấm chết ==================================== */
-
-
 
  /* Main (Start) */
  .container {
@@ -375,43 +572,8 @@ body {
 }
 
 .container img {
-    width: 100%;
+
 }
-
-/* Main (Start) */
-
-                /* CSS Main viet o day nhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀   ⢀⠤⠒⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀  ⢀⡯⠴⠶⠶⠒⠢⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀  ⡎⡤⠖⠂⡀⠒⡢⡌⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠯⢭⣵⠑⣯⡭⢹⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡆⠀⢠⣤⠄⠀⣸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣷⢄⣈⣟⢁⢴⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⠀⠀⣀⢴⠒⡝⠁⠬⠛⣚⡩⠔⠉⢻⠒⣦⢄⠀⠀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⠀⢀⢎⠁⡌⢰⠁⠀⠀⠀⠀⠀⠀⠀⢸⠀⡛⠀⡷⡀⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⣀⣾⣷⣠⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⢹⢰⠁⢳⠀⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⢸⡿⠟⢿⢳⡏⠀⠀⠀⠀⠀⠀⠀⢠⡟⣶⣘⢞⡀⠘⡆⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⡼⢺⣯⢹⢰⡏⠒⠒⠒⠊⠀⠐⢒⣾⣹⣸⢹⣾⡇⠀⢣⠀⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⣏⣾⠃⠀⣼⡟⣢⣀⡠⠤⣀⡰⢋⡝⣱⣹⠇⣿⣧⣴⠸⡄⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⡏⡞⡆⢠⡇⣟⠭⡒⠭⠭⠤⠒⣡⠔⣽⡇⣂⣿⠟⠃⢀⡇⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⢧⡇⡧⢫⠃⣷⣽⣒⣍⣉⣈⡩⢴⠾⡳⢡⢸⣛⣪⡗⢴⠁⠀⠀⠀⠀
-                                            ⠀⠀⠀⠀⣼⢃⠷⣸⣤⣯⢞⡥⢍⣐⣂⠨⠅⠊⡠⢃⣟⢏⠹⣎⣆⡀⠀⠀⠀⠀
-                                            ⠀⡠⠶⠚⠛⠛⠽⢹⡟⡖⢓⠿⣝⠓⠒⠒⠒⠭⢤⠗⣯⣩⣽⣿⠷⣾⣿⢷⣆⠀
-                                            ⠜⣌⠢⢄⣀⡀⠀⡞⢡⠘⢄⠑⠨⢉⣀⠉⣀⠄⢊⠜⡸⠛⣿⡍⠉⠉⠈⢁⠁⠇
-                                            ⠈⢯⡓⠦⠤⠬⠭⣵⠀⠱⢄⠑⠲⠤⠤⠤⠤⠒⢁⡔⠁⢠⣏⣡⣤⣤⡶⠜⣻⠃
-                                            ⠀⠈⠙⠛⠒⠛⠻⠯⠕⠤⣀⣉⣓⣒⣂⣒⣒⣊⣁⣠⠔⠛⠂⠒⠛⠓⠛⠚⠉⠀ 
-                  CSS Main viet o day nhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-
-
-/* Main (End) */
-
-
-
-
-
-/* ====================================  Code dưới chỉ được xem không được đụng. Đụng tôi đấm chết ==================================== */
-
 
 /* Footer (Start) */
 .footer {
