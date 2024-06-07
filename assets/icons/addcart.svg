@@ -1,0 +1,15 @@
+<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+            <g id="グループ_3937" data-name="グループ 3937" transform="translate(-325 -1753)" opacity="1">
+                <g id="パス_453" data-name="パス 453" transform="translate(325 1753)" fill="none">
+                    <path d="M 29.5 29.5 L 26.875 29.5 L 0.5 29.5 L 0.5 0.5 L 29.5 0.5 L 29.5 29.5 Z" stroke="none"/>
+                    <path d="M 1 1 L 1 29 L 26.875 29 L 29 29 L 29 1 L 1 1 M 0 0 L 30 0 L 30 30 L 26.875 30 L 0 30 L 0 0 Z" stroke="none"/>
+                </g>
+                <g id="グループ_3896" data-name="グループ 3896" transform="translate(-82 905)">
+                    <rect id="長方形_18148" data-name="長方形 18148" width="25" height="25" transform="translate(410 851)" fill="none" opacity="0"/>
+                    <g id="グループ_3894" data-name="グループ 3894" transform="translate(287.215 850.875)">
+                        <path id="パス_450" data-name="パス 450" d="M128.285,8.625h2.5v1.25h1.5V8.625h5.5v1.25h1.5V8.625h2.5v5.25h1.5V7.125h-4V4.907A1.785,1.785,0,0,0,137.5,3.125h-4.936a1.785,1.785,0,0,0-1.782,1.782V7.125h-4v14.5h10.75v-1.5h-9.25Zm4-3.718a.283.283,0,0,1,.282-.282H137.5a.283.283,0,0,1,.282.282V7.125h-5.5Z" fill="#fff"/>
+                        <path id="パス_451" data-name="パス 451" d="M144.545,17.341H141.76V14.556h-1.5v2.785h-2.784v1.5h2.784v2.784h1.5V18.841h2.785Z" fill="#fff"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
