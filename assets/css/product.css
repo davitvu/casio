@@ -332,7 +332,7 @@
 .prod-panel {
     display: flex;
     justify-content: left;
-    height: 80vh;
+    height: 100vh;
 }
 
 .prod-panel .prod-filter {
