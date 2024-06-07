@@ -154,7 +154,7 @@ function renderProducts(data) {
 
       // Tạo thẻ a
       const a = document.createElement('a');
-      a.href = '#';
+      a.href = '/product-detail-1.html';
 
       // Tạo thẻ div cho hình ảnh sản phẩm
       const prodImageDiv = document.createElement('div');

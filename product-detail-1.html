@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +11,22 @@
     <link rel="shortcut icon" href="./assets/favicon/icon-152x152.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon/icon-167x167.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon/icon-180x180.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./assets/favicon/icon-192x192.png" type="image/x-icon">    
+    <link rel="shortcut icon" href="./assets/favicon/icon-192x192.png" type="image/x-icon">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
 
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 
     <!-- CDN font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/product-detail.css">
@@ -29,6 +34,7 @@
     <!-- Script -->
     <script src="./assets/js/app.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header id="header" class="header"></header>
@@ -40,32 +46,160 @@
     <main class="container">
         <div class="product-details">
             <div class="wrap-product">
-                <div class="images">
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_1.jpg"></div>
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_2.jpg"></div>
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_3.jpg"></div>
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_4.jpg"></div>
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_5.jpg"></div>
-                    <div class="mainProd"><img src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_6.jpg"></div>
+                <div class="images" id="imageContainer">
+                    <!-- <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_1.jpg"></div>
+                    <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_2.jpg"></div>
+                    <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_3.jpg"></div>
+                    <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_4.jpg"></div>
+                    <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_5.jpg"></div>
+                    <div class="mainProd"><img
+                            src="./assets/img/product_Dai_Truong/product/ListProduct/Prod_1/MainProd/image_6.jpg"></div> -->
                 </div>
-                <div>
-                    <div class="title-spec"><h3>Specifications</h3></div>
+                <div class="warning">
+                    <div class="image-warning" id="imageWarningsContainer">
+                        <!-- <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image1.png">
+                        </div>
+                        <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image2.png">
+                        </div>
+                        <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image3.png">
+                        </div>
+                        <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image4.png">
+                        </div>
+                        <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image5.png">
+                        </div>
+                        <div class="img-warning"><img
+                                src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/image6.png">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="wrap-specifications">
+                    <div class="title-spec">
+                        <h3>Specifications</h3>
+                    </div>
+                    <hr>
+                    <div class="spec-item">
+                        <a href="#">Basic Infomation</a>
+                    </div>
+                    <hr>
+                    <div class="spec-item">
+                        <a href="#">Exterior</a>
+                    </div>
+                    <hr>
+                    <div class="spec-item">
+                        <a href="#">Watch Features</a>
+                    </div>
+                    <hr>
+                    <div class="wrap-operation-guide">
+                        <div class="button-guide">
+                            <span>Operation Guide</span>
+                            <a href="https://support.casio.com/th/manual/manualsearch.php?cid=009&MODULE=5672"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="product-info">
                 <div class="wrap-element">
                     <div class="header-title">
-
+                        <ul class="h1">
+                            <li class="code">MR-G</li>
+                            <li class="prod-series">MRG-B2100 Series</li>
+                            <li class="prod-code">MRG-B2100B-1A</li>
+                        </ul>
+                        <ul class="h2">
+                            <li class="condition">Mới</li>
+                            <li class="date">06/2024</li>
+                            <li class="price">44500000 </li>
+                            <li class="unit"> VND</li>
+                        </ul>
                     </div>
                     <div class="product-recommnad">
-
+                        <div class="wrap-product-recommand">
+                            <div class="prod-lists" id="rcdImageContainer">
+                                <!-- <label for="pd0" class="check-img">
+                                    <input type="checkbox" id="pd0" name="image">
+                                    <div class="prod-img"><img
+                                            src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/image1.png">
+                                    </div>
+                                </label>
+                                <label for="pd1" class="check-img">
+                                    <input type="checkbox" id="pd1" name="image">
+                                    <div class="prod-img"><img
+                                            src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/image2.png">
+                                    </div>
+                                </label>
+                                <label for="pd2" class="check-img">
+                                    <input type="checkbox" id="pd2" name="image">
+                                    <div class="prod-img"><img
+                                            src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/image3.jpg">
+                                    </div>
+                                </label>
+                                <label for="pd3" class="check-img">
+                                    <input type="checkbox" id="pd3" name="image">
+                                    <div class="prod-img"><img
+                                            src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/image4.png">
+                                    </div>
+                                </label>
+                                <label for="pd4" class="check-img">
+                                    <input type="checkbox" id="pd4" name="image">
+                                    <div class="prod-img"><img
+                                            src="/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/image5.png">
+                                    </div>
+                                </label> -->
+                            </div>
+                        </div>
                     </div>
                     <div class="details-unity">
-
+                        <div class="button-favorite">
+                            <span>Thêm vào giỏ hàng</span>
+                        </div>
+                        <div class="button-add-cart">
+                            <span>Mua Ngay</span>
+                        </div>
                     </div>
                     <div class="description">
+                        <div class="format-details">
+                            <p class="details">
+                                Kỷ niệm 50 năm đồng hồ Casio với PRO TREK siêu việt tượng trưng cho Casio
+                                quyết tâm giữ đúng con người của chúng ta, đồng thời không ngừng đổi mới.
 
+                                PRO TREK PRW-61SS có thiết kế và phối màu kỷ niệm đặc biệt với Casio
+                                màu sắc, vật liệu và hoàn thiện gợi lên bản chất có mặt khắp nơi nhưng luôn thay đổi của
+                                bầu trời, biển và ánh nắng - tỏa sáng hôm nay và mãi mãi.
+
+                                Thiết kế có vòng quay số được khắc bằng laser với hoa văn dạng rãnh. Logo được khắc trên
+                                vỏ máy trở lại, bày tỏ lòng tôn kính đối với chiếc Casiotron đầu tiên được phát hành vào
+                                năm 1974.
+
+                                PRO TREK rất đặc biệt xứng đáng kỷ niệm 50 năm này thể hiện cả nguồn gốc của đồng hồ
+                                Casio
+                                và nửa thế kỷ đổi mới mang tính đột phá sau đó.
+                                Kỷ niệm 50 năm đồng hồ Casio với PRO TREK siêu việt tượng trưng cho Casio
+                                quyết tâm giữ đúng con người của chúng ta, đồng thời không ngừng đổi mới.
+
+                                PRO TREK PRW-61SS có thiết kế và phối màu kỷ niệm đặc biệt với Casio
+                                màu sắc, vật liệu và hoàn thiện gợi lên bản chất có mặt khắp nơi nhưng luôn thay đổi của
+                                bầu trời, biển và ánh nắng - tỏa sáng hôm nay và mãi mãi.
+
+                                Thiết kế có vòng quay số được khắc bằng laser với hoa văn dạng rãnh. Logo được khắc trên
+                                vỏ máy trở lại, bày tỏ lòng tôn kính đối với chiếc Casiotron đầu tiên được phát hành vào
+                                năm 1974.
+
+                                PRO TREK rất đặc biệt xứng đáng kỷ niệm 50 năm này thể hiện cả nguồn gốc của đồng hồ
+                                Casio
+                                và nửa thế kỷ đổi mới mang tính đột phá sau đó.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,5 +212,7 @@
     <script>
         load("#footer", "./templates/footer.html")
     </script>
+    <script src="./assets/js/product/product_details.js"></script>
 </body>
+
 </html>
