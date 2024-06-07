@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo tài khoản</title>
+    <title>Đăng Nhập</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon/icon-120x120.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon/icon-152x152.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon/icon-167x167.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon/icon-180x180.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./assets/favicon/icon-192x192.png" type="image/x-icon">
-    <link rel="manifest" href="./assets/favicon/favicon.webmanifest">
+    <link rel="shortcut icon" href="./assets/favicon/icon-192x192.png" type="image/x-icon">    
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,48 +29,89 @@
     <!-- Script -->
     <script src="./assets/js/app.js"></script>
 </head>
-<body>
+<body class="container">
     <!-- Header -->
-    <header id="header" class="header">
-    </header>
+    <!-- <header id="header" class="header">
+    </header> -->
 
     <!-- Main -->
-    <main class="container">
+    <main class="auth">
+        <div class="auth__intro d-md-none">
+            <img src="./assets/img/logo.svg" alt="" class="auth__intro-img" />
+            <p class="auth__intro-text">
+                Những giá trị thương hiệu xa xỉ tốt nhất, sản phẩm chất lượng cao và dịch vụ sáng tạo
+            </p>
+        </div>
 
+        <!-- Auth content -->
+        <div class="auth__content">
+            <div class="auth__content-inner">
+                <a href="./" class="logo">
+                    <center><img src="./assets/img/log(Trang)/clock.png" alt="CASIO" class="logo__img" />
+                    <h2 class="logo__title">CASIO</h2></center>    
+                </a>
+                <h1 class="auth__heading">Hello Again!</h1>
+                <p class="auth__desc">
+                    Chào mừng bạn quay lại để đăng nhập. Là khách hàng quay lại, bạn có quyền truy cập vào tất cả
+                    thông tin đã lưu trước đó của mình.
+                </p>
+                <form action="./sign-in.html" class="form auth__form">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="Email"
+                                class="form__input"
+                                autofocus
+                                required
+                            />
+                            <img src="./assets/img/log(Trang)/email.png" alt="" class="form__input-icon" />
+                            <img src="./assets/img/log(Trang)/padlock.png" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Email không đúng định dạng</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input
+                                type="password"
+                                name=""
+                                id=""
+                                placeholder="Mật khẩu"
+                                class="form__input"
+                                required
+                                minlength="6"
+                            />
+                            <img src="./assets/img/log(Trang)/padlock.png" alt="" class="form__input-icon" />
+                            <img src="./assets/img/log(Trang)/warning.png" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                    </div>
+                    <div class="form__group form__group--inline">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" id="" class="form__checkbox-input d-none" />
+                            <span class="form__checkbox-label">Đặt làm mặc định</span>
+                        </label>
+                        <a href="./sign-up.html">Quên mật khẩu?</a>
+                    </div>
+                    <div class="form__group auth__btn-group">
+                        <button class="btn-auth btn--primary auth__btn form__submit-btn">Đăng nhập</button>
+                        <button class="btn-auth btn--outline auth__btn btn--no-margin">
+                            <img src="./assets/img/log(Trang)/google.png" alt="" class="btn__icon icon" />
+                            Đăng nhập với Google
+                        </button>
+                    </div>
+                </form>
 
-                                        <!-- Viết code ở đây ae ưi 
-
-
-
-                                                 _oo0oo_
-                                                o8888888o
-                                                88" . "88
-                                                (| -_- |)
-                                                0\  =  /0
-                                                ___/`---'\___
-                                            .' \\|     |// '.
-                                            / \\|||  :  |||// \
-                                            / _||||| -:- |||||- \
-                                        |   | \\\  -  /// |   |
-                                        | \_|  ''\---/''  |_/ |
-                                        \  .-\__  '-'  ___/-. /
-                                        ___'. .'  /--.--\  `. .'___
-                                    ."" '<  `.___\_<|>_/___.' >' "".
-                                    | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-                                    \  \ `_.   \_ __\ /__ _/   .-` /  /
-                                =====`-.____`.___ \_____/___.-`___.-'=====
-                                                `=---='
-
-                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                        Phật phù hộ, không bao giờ BUG
-                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-
-
-                                
-                                         Viết code ở đây ae ưi -->
-    </main>
-
+                <p class="auth__text">
+                    Bạn chưa có tài khoản???
+                    <a href="./sign-up.html" class="auth__link auth__text-link">Đăng ký</a>
+                </p>
+            </div>
+        </div>
+    </main> 
     <!-- Footer -->
-    <footer id="footer" class="footer"></footer>
+    <!-- <footer id="footer" class="footer"></footer> -->
 </body>
 </html>

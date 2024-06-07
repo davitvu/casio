@@ -455,6 +455,7 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
+    background-color: #fff;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
     padding-top: 10px;
@@ -567,13 +568,7 @@ body {
  /* Header (End) */
 
  /* Main (Start) */
- .container {
-    height: 1000px;
-}
 
-.container img {
-
-}
 
 /* Footer (Start) */
 .footer {

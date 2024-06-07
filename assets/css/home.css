@@ -1,0 +1,226 @@
+.container {
+    font-family: "Lato", sans-serif;
+}
+
+.main-slide {
+    width: 100%;
+    max-width: 1920px;
+    max-height: 808px;
+    height: auto;
+}
+
+.main-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.main-celebrate {
+    background-image: url("/casio/assets/img/home_Son/slide2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-celebrate_text {
+    font-weight: bold;
+    width: 1120px;
+    color: #fff;
+}
+
+.main-celebrate_title {
+    font-size: 3.8rem;
+    margin: 0px 0;
+    line-height: 5rem;
+    margin-bottom: 60px;
+}
+
+.main-celebrate_descript {
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    margin-top: 30px;
+}
+
+.main-video {
+    display: flex;
+    margin: 60px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-future {
+    background-image: url(/casio/assets/img/home_Son/slide3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    /* font-family: "Roboto Mono", monospace; */
+}
+    
+.main-future_box {
+    display: flex;
+    padding: 80px 300px 80px 240px;
+}
+
+.main-future img {
+    width: 377px;
+}
+
+.main-future_text {
+    margin-left: 50px;
+}
+
+.main-future_text p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 4rem;
+}
+
+.main-future_text p:last-child {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+}
+
+.main-future_text strong {
+    font-size: 2.3rem;
+}
+
+.main-design {
+    background-color: #f2f2f2;
+}
+
+.main-design_box {
+    display: flex;
+    width: 1525px;
+    margin: 0 auto;
+    padding: 90px 0;
+    gap: 60px;
+}
+
+.main-design_box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.main-design_img img {
+    width: 733px;
+    height: 550px;
+}
+
+.main-design_title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 4.6rem;
+}
+
+.main-design_descript {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    font-weight: bold;
+    line-height: 3.6rem;
+}
+
+.main-design_descript:nth-child(3),
+.main-design_descript:nth-child(4) {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    font-weight: normal;
+    line-height: 2.8rem;
+}
+
+.main-design_descript:nth-child(4) {
+    margin-top: 20px;
+}
+
+.main-hardware {
+    display: flex;
+    justify-content: center;
+    margin: 75px 0;
+    gap: 65px;
+}
+
+.main-harware_title {
+    font-weight: bold;
+    line-height: 3.5rem;
+    margin-top: 40px;
+    font-size: 2.0rem;
+    width: 574px;
+}
+ 
+.main-harware_box img {
+    width: 574px;
+    height: 430px;
+}
+
+.main-detailwatch {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* font-family: "Lato", sans-serif; */
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Roboto Mono", monospace;
+    }
+    
+.main-detailwatch_title {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
+
+.main-detailwatch_link {
+    max-width: 602px;
+    max-height: 602px;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.main-detailwatch_link:hover {
+    border: 1px solid #333;
+}
+
+.main-detailwatch_link img {
+    padding: 30px 0;
+    width: 90%;
+    height: auto;
+}
+.main-detailwatch_link li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.main-detailwatch p {
+    margin: 30px 0 40px;
+    font-weight: bold;
+}
+
+.main-detailwatch button {
+    margin: 0 auto;
+    width: 300px;
+    height: 47px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 70px;
+}
+
+.main-detailwatch button:hover {
+    border-color: #333;
+    cursor: pointer;
+}
+
+.main-detail {
+    width: 100%;
+    max-width: 1980px;
+    max-height: 704px;
+    height: auto;
+}
+
+.main-detail img {
+    width: 100%;
+    height: auto;
+}
