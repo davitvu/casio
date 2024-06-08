@@ -154,7 +154,7 @@ function renderProducts(data) {
 
       // Tạo thẻ a
       const a = document.createElement('a');
-      a.href = '/product-detail-1.html';
+      a.href = './product-detail-1.html';
 
       // Tạo thẻ div cho hình ảnh sản phẩm
       const prodImageDiv = document.createElement('div');
@@ -236,7 +236,7 @@ function renderProducts(data) {
 
       // Tạo thẻ a cho add-to-cart
       const cartLink = document.createElement('a');
-      cartLink.href = './product-detail-1.html';
+      cartLink.href = '#';
       cartLink.innerHTML = 'Add to cart <img src="./assets/icons/addcart.svg" alt="Add to cart">';
 
       // Gắn thẻ a vào div .add-to-cart
