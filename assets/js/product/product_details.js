@@ -24,7 +24,7 @@ for (let i = 1; i <= totalImages; i++) {
 //==========================================================================================================
 
 // Đường dẫn đến thư mục chứa ảnh
-const warningImageFolderPath = '/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/';
+const warningImageFolderPath = './assets/img/product_Dai_Truong/product/ListProduct/Prod_1/ImageTemplate/';
 
 // Lấy container chứa ảnh
 const imageWarningsContainer = document.getElementById('imageWarningsContainer');
