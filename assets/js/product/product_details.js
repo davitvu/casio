@@ -44,7 +44,7 @@ for (let i = 1; i <= 6; i++) {
 //===============================================================================================================
 
 // Đường dẫn đến thư mục chứa ảnh
-const rcdImageFolderPath = '/assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/';
+const rcdImageFolderPath = './assets/img/product_Dai_Truong/product/ListProduct/Prod_1/Recommand/';
 
 // Lấy container chứa ảnh
 const rdcImageContainer = document.getElementById('rcdImageContainer');
