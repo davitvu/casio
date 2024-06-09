@@ -283,6 +283,7 @@ body {
     margin-top: 3px;
     margin-left: 6px;
     gap: 6px;
+    display: none;
 }
 
 .nav-item:last-child {
