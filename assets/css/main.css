@@ -206,11 +206,7 @@ body {
     color: #000;
 }
 
-.notice-sale:hover .notice-sale_box {
-    cursor: pointer;
-}
-
-.notice-sale_box:hover a {
+.notice-sale_item:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -308,6 +304,27 @@ body {
     background-color: #fff;
 }
 
+.sign-up {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #171c28;
+}
+
+.sign-up:hover {
+    border: 1px solid #000;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+    
+.sign-in {
+    color: #fff;
+    padding: 0 10px;
+    margin-left: 25px;
+}
+
 .user-box {
     position: relative;
 }
@@ -395,27 +412,6 @@ body {
     text-decoration: none;
 }
 
-.sign-up {
-    margin-left: 10px;
-    color: #fff;
-}
-
-.sign-up:hover {
-    opacity: 0.7;
-}
-
-.sign-in {
-    color: #171c28;
-    background-color: transparent;
-    padding: 0 10px;
-    border: 1px solid transparent;
-    margin-left: 10px;
-}
-
-.sign-in:hover {
-    border: 1px solid #000;
-    opacity: 0.7;
-}
 
 .form-input_box {
     border-bottom: 1px solid #000;
