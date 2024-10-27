@@ -180,7 +180,7 @@ body {
 /* Drop dowm (End) */
 
 .notice-sale {
-    background-color: #eeeeee;
+    background-color: #ECD8F2;
     width: 100%;
     height: 3rem;
     display: flex;
@@ -305,14 +305,10 @@ body {
 }
 
 .sign-up {
-    margin-left: 10px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: #171c28;
-}
-
-.sign-up:hover {
-    border: 1px solid #000;
+    color: #fff;
+    padding: 0 20px;
+    border: 1px solid #f94545;
+    margin-left: 15px;
 }
 
 .btn:hover {
@@ -320,9 +316,18 @@ body {
 }
     
 .sign-in {
-    color: #fff;
+    margin-left: 20px;
     padding: 0 10px;
-    margin-left: 25px;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #171c28;
+}
+
+.sign-in:hover {
+    border: 1px solid pink;
+    background-color: pink;
+    opacity: 0.7;
+    color: #fff;
 }
 
 .user-box {
@@ -418,6 +423,13 @@ body {
     position: relative;
 }
 
+.form-input_box > .form-input {
+    width: 200px;
+    padding: 0 28px 0 7px;
+    height: 31px;
+    font-size: 16px;
+}
+
 .form-input {
     width: 150px;
     /* padding-left: 20px; */
@@ -438,9 +450,9 @@ body {
 } */
 
 .nav-item .icon-search {
-    width: 15px;
+    width: 16px;
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 5px;
 }
 
