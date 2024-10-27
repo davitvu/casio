@@ -653,6 +653,10 @@ body {
     background: transparent;
 }
 
+.footer-input:focus {
+    border: 2px solid #000;
+}
+
 .btn-send {
     color: #171c28;
     background-color: #ccc;
